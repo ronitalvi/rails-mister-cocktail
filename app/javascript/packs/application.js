@@ -6,5 +6,17 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-
+import 'bootstrap';
 console.log('Hello World from Webpacker')
+var popup = require("jquery-popup-overlay");
+
+$('#popup1').popup();
+$('#JPO').popup('hide');
+
+
+$('#popup2').popup({
+  pagecontainer: '#page',
+  escape: false
+});
+
+

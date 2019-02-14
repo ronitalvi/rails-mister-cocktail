@@ -1,0 +1,116 @@
+.home-banner {
+  background-image: asset-url('bar.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+  opacity: 0.9;
+}
+.home-banner h1 {
+  margin: 29px;
+font-family: 'Sacramento', cursive;
+font-size: 99px;
+font-weight: 500;
+
+}
+.benim{
+background-color: #0B0C10;
+border-radius: 10px;
+opacity: 0.7;
+border: 1px solid #0B0C10;
+text-decoration: none;
+padding: 15px 25px;
+
+font-weight: medium;
+text-align: center;
+color: white;
+}
+.benim:hover {
+opacity: 0.7;
+text-decoration: none;
+border: 1px solid #8C0D09;
+color: #999999;
+}
+
+
+.orta{
+ position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  background-color: #ccc;
+  border-radius: 3px;
+  text-align: center;
+
+
+}
+.main{
+
+}
+
+
+.fazla{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75ch;
+
+}
+
+
+.card-title{
+  position:  absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: medium;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+.card-p {
+  background-image: asset-url('cok1.jpg')
+
+}
+.flat-card-image {
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+.on{
+margin: 20px 20px;
+position: relative;
+border-radius: 5px;
+border-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+ body {
+  background-color:#624D44;
+
+
+}
+
+
+.show{
+  background-color:  white;
+  height: 100%;
+  margin-top: 50px;
+  opacity: 0.6;
+}
+.popup_content {
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 60%;
+  border: 2px solid #444;
+
+background-image: asset-url('warning.jpg');
+background-size: cover;
+}
+
+.open{
+
+}

@@ -1,0 +1,19 @@
+
+<div class="container">
+
+<div class="orta">
+     <h1>ingredients</h1>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+ <div class=“form-group”>
+   <%= f.label :description %>
+   <%= f.text_field :description, class: "form-control" %>
+   <%= f.association :ingredient, collection: Ingredient.all  %>
+
+   <%= f.label :description %>
+   <%= f.text_field :description, class: "form-control" %>
+   <%= f.association :ingredient, collection: Ingredient.all  %>
+ <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
+</div>
+</div>
