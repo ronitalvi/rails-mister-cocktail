@@ -1,19 +1,26 @@
+<div class="ddd">
 
 <div class="container">
+  <div class="orta">
+    <ul class="list-group">
+      <li class="list-group-item">
 
-<div class="orta">
-     <h1>ingredients</h1>
-<%= simple_form_for [@cocktail, @dose] do |f| %>
- <div class=“form-group”>
-   <%= f.label :description %>
-   <%= f.text_field :description, class: "form-control" %>
-   <%= f.association :ingredient, collection: Ingredient.all  %>
+        <h1>ingredients</h1>
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
 
-   <%= f.label :description %>
-   <%= f.text_field :description, class: "form-control" %>
-   <%= f.association :ingredient, collection: Ingredient.all  %>
- <%= f.submit class: "btn btn-primary" %>
+      </li>
+      <li class="list-group-item"><%= f.label :description %>
+      <%= f.text_field :description, class: "form-control" %></li>
+      <li class="list-group-item">  <%= f.association :ingredient, collection: Ingredient.all  %></li>
+      <li class="list-group-item"> <%= f.label :description %>
+      <%= f.text_field :description, class: "form-control" %></li>
+      <li class="list-group-item">   <%= f.association :ingredient, collection: Ingredient.all  %>
+      </li>
+      <li class="list-group-item">
+      <%= f.submit class: "btn btn-primary" %></li>
+    </ul>
+
+    <% end %>
   </div>
-<% end %>
 </div>
 </div>
