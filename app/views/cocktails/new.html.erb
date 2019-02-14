@@ -1,19 +1,15 @@
-<div class="container text-center">
-
-  <div class= "orta">
-
-<%= simple_form_for [@cocktail] do |f| %>
-  <%= f.error_notification %>
- <%= f.input :name, class: "form-control" %>
- <%= f.input :photo %>
-<%= f.input :photo_cache, as: :hidden, class: "form-control"  %>
-
-  <%= f.button :submit, class: "btn-primary" %>
-<% end %>
-
-
-
+<div class="ffff">
+  <div class="container text-center">
+    <div class= "orta">
+      <ul class="list-group">
+        <%= simple_form_for [@cocktail] do |f| %>
+        <li class="list-group-item"><%= f.error_notification %></li>
+        <li class="list-group-item"><%= f.input :name, class: "form-control" %></li>
+        <li class="list-group-item"> <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden  %></li>
+        <li class="list-group-item">  <%= f.button :submit, class: "btn-danger btn-lg" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>
-
-</div>
-
