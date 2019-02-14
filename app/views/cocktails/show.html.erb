@@ -2,6 +2,23 @@
 <div class="container taxt-center">
 
   <div class= "show text-center" >
+<% if @cocktail.photo.present? %>
+        <div >
+          <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+        </div>
+        <% else %>
+                <div class=" gos ">
+                </div>
+                  <% end %>
+
+
+
+
+
+
+
+
+
 
 
 <h2><%= @cocktail.name %></h2>
@@ -10,7 +27,7 @@
 <% @cocktail.doses.each do |d|%>
 <p><%= d.description %></p>
 <p><%= d.ingredient.name %></p>
-<%= link_to 'delete', dose_path(d), method: :delete, data: {comfirm: "are you sure"}, class: "btn-primary" %> <br>
+<%= link_to   raw('<i class="far fa-trash-alt"></i>'), dose_path(d), method: :delete, data: {comfirm: "are you sure"} %> <br>
 
 <% end %>
 

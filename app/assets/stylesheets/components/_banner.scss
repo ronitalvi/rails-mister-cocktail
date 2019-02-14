@@ -9,7 +9,7 @@
 }
 .home-banner h1 {
   margin: 29px;
-font-family: 'Sacramento', cursive;
+font-family: 'Sacramento';
 font-size: 99px;
 font-weight: 500;
 
@@ -59,7 +59,20 @@ color: #999999;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 75ch;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
 
+}
+
+.fazla:hover {
+  text-decoration: none;
+}
+.sag_alt{
+  position: absolute;
+  bottom: 5px;
+  right:5px;
 }
 
 
@@ -74,16 +87,24 @@ color: #999999;
 }
 
 .card-image {
-   background-image: asset-url('cok1.png');
+
     height: 180px;
     background-position: center;
     background-size: cover;
 }
+.gos{
+   height: 180px;
+    background-position: center;
+     background-image: asset-url('cok1.png');
+
+}
 .on{
+  background-image: asset-url('cok1.png');
 margin: 20px 20px;
 position: relative;
 border-radius: 5px;
-border-shadow: 1px 1px 3px rgba(0,0,0,1);
+background-size: cover;
+border-shadow: 1px 1px 3px black;
 }
 
  body {

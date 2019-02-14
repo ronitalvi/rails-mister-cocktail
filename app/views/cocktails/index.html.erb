@@ -8,25 +8,46 @@
       <% @cocktails.each do |cok| %>
       <div class="col-md-4">
         <%= link_to cocktail_path(cok) do%>
-        <div class="card on card-image " style="width: 33rem; height:14em;">
+        <% if cok.photo.present? %>
+        <div class="card on card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cok.photo %>')">
           <h3 class="card-title"><%= cok.name %></h3>
           <h6 class="card-subtitle mb-2 text-muted popup1_open">warning</h6>
-          <p class="card-text fazla"></p>
+          <p class="card-text fazla">
+          <%= link_to raw('<i class="far fa-edit"></i>'), new_cocktail_dose_path(cok) %>
+          </p>
+          <h5 class="sag_alt">
+          <%= link_to   raw('<i class="far fa-trash-alt"></i>'), cocktail_path(cok), method: :delete, data: {comfirm: "are you sure"} %></h5>
+
+        </div>
+        <% else %>
+                <div class="card on card-image ">
+          <h3 class="card-title"><%= cok.name %></h3>
+          <h6 class="card-subtitle mb-2 text-muted popup1_open">warning</h6>
+          <p class="card-text fazla">
+          <%= link_to raw('<i class="far fa-edit"></i>'), new_cocktail_dose_path(cok) %>
+          </p>
+          <h5 class="sag_alt">
+          <%= link_to   raw('<i class="far fa-trash-alt"></i>'), cocktail_path(cok), method: :delete, data: {comfirm: "are you sure"} %></h5>
+
         </div>
         <% end %>
+        <% end %>
       </div>
-      <% end -%>
+      <% end %>
     </div>
   </div>
 
 
   <section id="popup1" class="open">
-    <h2>dddddddddddddddddd</h2>
+    <h2>ddddddddddddddddddfffffffffff</h2>
     <p>blabkabka</p>
     <p>blabkabka</p>
     <p>blabkabka</p>
     <p>blabkabka</p>
     <p>blabkabka</p>
+    <p>blabkabka</p>
+
   </section>
 </div>
 </div>
