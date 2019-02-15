@@ -4,23 +4,17 @@
   <div class="orta">
     <ul class="list-group">
       <li class="list-group-item">
-
-        <h1>ingredients</h1>
+        <h1 class="yazi">Ingredients</h1>
+      </li>
         <%= simple_form_for [@cocktail, @dose] do |f| %>
-
-      </li>
-      <li class="list-group-item"><%= f.label :description %>
-      <%= f.text_field :description, class: "form-control" %></li>
-      <li class="list-group-item">  <%= f.association :ingredient, collection: Ingredient.all  %></li>
-      <li class="list-group-item"> <%= f.label :description %>
-      <%= f.text_field :description, class: "form-control" %></li>
-      <li class="list-group-item">   <%= f.association :ingredient, collection: Ingredient.all  %>
-      </li>
-      <li class="list-group-item">
-      <%= f.submit class: "btn btn-primary" %></li>
-    </ul>
-
+      <li class="list-group-item yazi"><%= f.label :description , class: "form-control "  %>
+      <%= f.text_field :description, class: "form-control yazi" %></li>
+      <li class="list-group-item yazi " >  <%= f.association :ingredient, collection: Ingredient.all, class: "form-control yazi"  %></li>
+      <li class="list-group-item yazi">
+      <%= f.submit class: "btn btn-primary yazi" %></li>
+      <li class="list-group-item yazi"><%= link_to 'turn back', cocktail_path(@cocktail), class: "btn btn-primary yazi" %>  </li>
     <% end %>
+    </ul>
   </div>
 </div>
 </div>
